@@ -3,40 +3,91 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/windsor/windsor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:200,300,400,700,900|Playfair+Display:400,400i,700,700i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
   </head>
   <body>
+    <header>
     <nav>
-      <a href="/">Home</a>
-      <a href="/blog/">Blog</a>
+
+    </nav>
+  </header>
+
+
+
+    <main class="ui text container">
+
+
+      <aside>
+        <h3><a href="/">Just Stop</a></h3>
+        <p>Change your relationship with time</p>
+        <button class="ui button green">Buy The eBook</button>
+        {% assign chapters =  site.chapters | sort: "order" | group_by:"chapter" %}
+        {% for chapter in chapters %}
+
+            <div class="ui vertical text menu">
+              <div class="item">
+                <a class="title" href="#">
+                  {{ chapter.name | replace: '-', ' ' | upcase}}
+                </a>
+
+                <div class="active content menu">
+
+
+                {% for p in chapter.items %}
+                {% if p.url == page.url %}
+                <a class="active item" href="{{ p.url }}">{{ p.title }}</a>
+                {% else %}
+                <a class="item" href="{{ p.url }}">{{ p.title }}</a>
+                {% endif %}
+                {% endfor %}
+
+                </div>
+
+
+
+              </div>
+            </div>
+
+        {% endfor %}
+
+      </aside>
+
+      <section class="">
+        <h1>{{ page.title }}</h1>
+        <article>
+          {{ content }}
+        </article>
+      </section>
+
+
+    <nav class="pagination">
+
+      {% assign pages = site.chapters | sort: "order" %}
+      {% assign count = pages | size %}
+      {% for i in (0..count) %}
+      {% assign prev = i | minus: 1 %}
+      {% assign next = i | plus: 1 %}
+
+      {% if pages[i].title == page.title and prev >= 0 %}
+      <a class="ui left floated " href="{{ pages[prev].url}}"> &#8592; {{ pages[prev].title }}</a>
+      {% endif %}
+
+      {% if pages[i].title == page.title and next < count %}
+      <a class="ui right floated" href="{{ pages[next].url}}">{{ pages[next].title }} &#8594;</a>
+      {% endif %}
+      {% endfor %}
+
     </nav>
 
-    <aside>
-      <h2>Contents</h2>
-      <ul>
-      {% for chapter in site.data.chapters %}
-        <li>
-          {{ chapter.name  }}
-          <ul>
-            {% assign pages = site.pages | where:"categories",chapter.slug | sort:"order" %}
-            {% for p in pages %}
-            <li><a href="{{ p.url }}">{{ p.title }}</a></li>
-            {% endfor %}
-          </ul>
-        </li>
-      {% endfor %}
-      </ul>
-    </aside>
+  </main>
 
-    <section>
-      <h1>{{ page.title }}</h1>
-      <article>
-        {{ content }}
-      </article>
-    </section>
+  <footer>
+  </footer>
 
-    <footer>
-      &copy; to me
-    </footer>
   </body>
 </html>

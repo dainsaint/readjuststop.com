@@ -1,10 +1,117 @@
 aside
 {
-  float:right;
-  width: 300px;
+  position: fixed;
+  left: 50%;
+  transform: translate( 400px, 0 );
+
 }
 
 section
 {
-  margin-right: 300px;
+
+}
+
+main
+{
+  position: relative;
+  margin-bottom: 300px;
+
+}
+article
+{
+  position: relative;
+}
+
+
+h1, h2, h3, h4
+{
+  font-family: 'Noto Serif SC', serif;
+}
+
+
+hr
+{
+  border: none;
+  border-top: 1px solid #4484C2;
+}
+
+h2
+{
+    font-style: italic;
+}
+
+body
+{
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+
+}
+
+header
+{
+  height: 100px;
+}
+
+p, ul, ol
+{
+  line-height: 1.5em;
+  color: #444;
+}
+
+li span
+{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Noto Serif SC', serif;
+}
+
+ul
+{
+  list-style: none;
+}
+
+ul
+{
+  padding-left: 0px;
+}
+
+ul li:last-child
+{
+  margin-bottom: 20px;
+}
+
+footer
+{
+  height: 100px;
+}
+
+.footnotes
+{
+  z-index: -1;
+  color: #666;
+
+  position: absolute;
+  bottom: 0px;
+  transform: translate(0, 100%);
+  padding-top:200px;
+
+}
+
+.footnotes ol
+{
+  border-top: 1px solid #EEE;
+  padding-top: 1em;
+}
+
+.pagination
+{
+  border-top: 1px solid #EEE;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+
+.right.floated
+{
+  float: right;
 }
