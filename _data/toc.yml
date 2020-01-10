@@ -1,0 +1,58 @@
+- name: Intro
+  pages:
+    - name: On Time
+      url: /intro/on-time
+    - name: Let's Begin
+      url: /intro/lets-begin
+    - name: How To Read This book
+      url: /intro/how-to-read-this-book
+- name: Chapter One
+  pages:
+    - name: The End Of Productivity
+      url: /chapter-one/the-end-of-productivity
+    - name: Being
+      url: /chapter-one/being
+    - name: Let's Play
+      url: /chapter-one/exercise
+    - name: A Spell For Trust
+      url: /chapter-one/a-spell-for-trust
+- name: Chapter Two
+  pages:
+    - name: The End Of Distraction
+      url: /chapter-two/the-end-of-distraction
+    - name: Noticing
+      url: /chapter-two/noticing
+    - name: Let's Play
+      url: /chapter-two/exercise
+    - name: A Spell For Presence
+      url: /chapter-two/a-spell-for-presence
+- name: Chapter Three
+  pages:
+    - name: The End Of Busy
+      url: /chapter-three/the-end-of-busy
+    - name: Owning
+      url: /chapter-three/owning
+    - name: Let's Play
+      url: /chapter-three/exercise
+    - name: A Spell For Power
+      url: /chapter-three/a-spell-for-power
+- name: Chapter Four
+  pages:
+    - name: The End Of Sacrifice
+      url: /chapter-four/the-end-of-sacrifice
+    - name: Enjoying
+      url: /chapter-four/enjoying
+    - name: Let's Play
+      url: /chapter-four/exercise
+    - name: A Spell For Happiness
+      url: /chapter-four/a-spell-for-happiness
+- name: Chapter Five
+  pages:
+    - name: The End Of Scarcity
+      url: /chapter-five/the-end-of-scarcity
+    - name: Reclaiming
+      url: /chapter-five/reclaiming
+    - name: Let's Play
+      url: /chapter-five/exercise
+    - name: A Spell For Abundance
+      url: /chapter-five/a-spell-for-abundance

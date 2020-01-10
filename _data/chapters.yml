@@ -1,0 +1,14 @@
+- name: Intro
+  slug: intro
+- name: Chapter One
+  slug: chapter-one
+- name: Chapter Two
+  slug: chapter-two
+- name: Chapter Three
+  slug: chapter-three
+- name: Chapter Four
+  slug: chapter-four
+- name: Chapter Five
+  slug: chapter-five
+- name: Outro
+  slug: outro
