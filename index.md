@@ -1,10 +1,9 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-title: Just Stop: Change Your Relationship With Time
+title: Just Stop
 layout: main
 ---
-# Just Stop
 
 A collection of thoughts to change your relationship with time.
 
