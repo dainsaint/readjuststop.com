@@ -1,48 +1,99 @@
-aside
-{
-  position: fixed;
-  left: 50%;
-  transform: translate( 400px, 0 );
 
-}
-
-section
-{
-
-}
 
 main
 {
   position: relative;
   margin-bottom: 300px;
-
 }
+
 article
 {
   position: relative;
 }
 
-
-h1, h2, h3, h4
+article img, aside img
 {
-  font-family: 'Noto Serif SC', serif;
+  max-width: 100%;
 }
 
+aside img
+{
+  width: 60%;
+  max-width: 160px;
+}
+
+.lead
+{
+  font-size: 150%;
+  font-weight: lighter;
+}
+
+
+h2, h3, h4
+{
+
+}
+
+h2.tag
+{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 150%:
+}
+
+h1, aside h3
+{
+  font-family: 'BebasNeue', sans-serif;
+  color: #E55F60;
+}
+
+h1
+{
+  font-size: 400%;
+  border-bottom: 1px solid #EEE;
+}
+
+blockquote p
+{
+  font-weight: lighter;
+  font-size: 140%;
+  color: #888;
+}
+
+blockquote
+{
+  border-left: 3px solid #E55F60;
+  margin-left: 0px;
+  padding-left: 20px;
+}
 
 hr
 {
   border: none;
-  border-top: 1px solid #4484C2;
+  border-top: 1px solid #EEE;
 }
 
 h2
 {
-    font-style: italic;
+  font-style: italic;
+  font-weight: lighter;
+  color: #888;
+}
+
+code
+{
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 300%;
+  font-family: "Lato", sans-serif;
+  color: #888;
+  line-height: 200px;
+  display: block;
 }
 
 body
 {
-  font-family: 'Playfair Display', serif;
+
   font-size: 16px;
 
 }
@@ -62,7 +113,7 @@ li span
 {
   text-transform: uppercase;
   font-weight: bold;
-  font-family: 'Noto Serif SC', serif;
+  /* font-family: 'Noto Serif SC', serif; */
 }
 
 ul
@@ -84,6 +135,15 @@ footer
 {
   height: 100px;
 }
+
+#frontpage main p img
+{
+  max-width: 30%;
+  float:right;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
 
 .footnotes
 {

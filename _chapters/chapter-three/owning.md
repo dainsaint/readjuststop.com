@@ -5,7 +5,8 @@ order: 14
 layout: book
 ---
 
-> Until you take ownership for your life, you will always be chasing happiness. - *Sean Stephenson*
+> Until you take ownership for your life, you will always be chasing happiness.  
+> — *Sean Stephenson*
 
 The only thing we can truly own is our time.
 

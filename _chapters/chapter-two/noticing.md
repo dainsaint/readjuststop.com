@@ -8,7 +8,7 @@ layout: book
 > "I just think people are always doing that."  
 > "Doing what?"  
 > "They're always asking themselves, 'Where am I going?' but they're never looking around and asking, 'Where am I?' Everything's about what's going to be next instead of noticing what's happening right now. But the now is the only thing that's actually real.”  
-> - *Autumn Doughton*
+> — *Autumn Doughton*
 
 We want to introduce a bit of mindfulness to your day. While we aren't teaching meditation, there are a couple of lenses from the practice that are important enough to warrant attention. And truly, noticing is the practice of *paying attention to your attention*.
 

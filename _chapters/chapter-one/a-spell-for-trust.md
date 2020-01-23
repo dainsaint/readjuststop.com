@@ -5,4 +5,4 @@ order: 7
 layout: book
 ---
 
-There is always time to stop.
+`There is always time to stop.`

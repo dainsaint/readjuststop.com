@@ -5,7 +5,8 @@ order: 5
 layout: book
 ---
 
-> Doing nothing is better than being *busy* doing nothing. - *Lao Tzu*
+> Doing nothing is better than being *busy* doing nothing.  
+> — *Lao Tzu*
 
 Why are you here? We don't mean in a metaphysical, "why are any of us here, man?" way—we mean, why are you reading this material?
 

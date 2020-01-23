@@ -5,7 +5,7 @@ order: 18
 layout: book
 ---
 
-> “I finally figured out the only reason to be alive is to enjoy it.”  
+> I finally figured out the only reason to be alive is to enjoy it.  
 > — *Rita Mae Brown*
 
 What brings you pleasure?

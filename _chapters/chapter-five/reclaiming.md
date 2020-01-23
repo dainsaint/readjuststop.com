@@ -5,7 +5,7 @@ order: 22
 layout: book
 ---
 
-> Time isn't the main thing. It's the only thing.
+> Time isn't the main thing. It's the only thing.  
 > — *Miles Davis*
 
 Arguably the toughest part of this whole "making time for yourself" practice is learning how to setup—and enforce—the boundaries necessary to hold that time as your own. This is true both at work as well as home.
