@@ -87,7 +87,8 @@ code
   font-size: 300%;
   font-family: "Lato", sans-serif;
   color: #888;
-  line-height: 200px;
+  padding: 100px 0px;
+  line-height: 150%;
   display: block;
 }
 

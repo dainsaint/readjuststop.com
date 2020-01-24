@@ -1,7 +1,7 @@
 ---
 title: Outro
-chapter: outro
-order: 25
+chapter: together
+order: 26
 layout: book
 ---
 
@@ -19,7 +19,7 @@ And that comes from making subtle changes in the moment:
 - When we fall into a cycle of sacrificing our happiness, we can shift our focus to **enjoy** the pleasures of our life; and
 - When we get stuck feeling like there is never enough time, we can enforce our boundaries and **reclaim** our time as our own.
 
-Leaning into these five principles creates space for you to change your story from Someone Who Can't Change to Someone Who Can Grow.
+Leaning into these five principles creates space for you to change your story from Someone Who Can't Change to Someone Who Can Grow. And using them together can transform your experience of life into a state of flow.
 
 ----
 

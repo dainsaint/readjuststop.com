@@ -42,6 +42,10 @@
           <a class="ui left floated " href="{{ pages[prev].url}}"> &#8592; {{ pages[prev].title }}</a>
           {% endif %}
 
+          {% if pages[i].title == page.title and prev < 0 %}
+          <a class="ui left floated " href="/"> &#8592; Home</a>
+          {% endif %}
+
           {% if pages[i].title == page.title and next < count %}
           <a class="ui right floated" href="{{ pages[next].url}}">{{ pages[next].title }} &#8594;</a>
           {% endif %}

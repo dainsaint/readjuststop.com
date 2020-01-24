@@ -1,7 +1,7 @@
 ---
 title: Acknowledgements
-chapter: outro
-order: 26
+chapter: together
+order: 27
 layout: book
 ---
 
