@@ -1,0 +1,41 @@
+---
+---
+$linkColor: #165577;
+
+body
+{
+  background: #FEFEFE;
+}
+
+.menu .item .title
+{
+  color: $linkColor;
+}
+
+nav.pagination a
+{
+  color: $linkColor;
+}
+
+
+.ui.button.primary
+{
+  background: $linkColor;
+
+  :hover
+  {
+    background: lighten( $linkColor, 10 );
+  }
+}
+
+
+.ui.button.primary.basic
+{
+  color: $linkColor !important;
+  box-shadow: 0 0 0 1px $linkColor inset!important;
+}
+
+p a:not(button)
+{
+  color: $linkColor;
+}

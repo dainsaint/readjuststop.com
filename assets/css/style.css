@@ -22,12 +22,6 @@ aside img
   max-width: 160px;
 }
 
-.lead
-{
-  font-size: 150%;
-  font-weight: lighter;
-}
-
 
 h2, h3, h4
 {
@@ -38,8 +32,17 @@ h2.tag
 {
   font-style: normal;
   font-weight: bold;
-  font-size: 150%:
+  font-size: 150%;
+  color: #222;
 }
+
+
+.lead
+{
+  font-size: 120%;
+  font-weight: lighter;
+}
+
 
 h1, aside h3
 {
@@ -50,14 +53,14 @@ h1, aside h3
 h1
 {
   font-size: 400%;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #DDD;
   font-weight: normal;
 }
 
 blockquote p
 {
   font-weight: lighter;
-  font-size: 140%;
+  font-size: 120%;
   color: #888;
 }
 
@@ -71,7 +74,7 @@ blockquote
 hr
 {
   border: none;
-  border-top: 1px solid #EEE;
+  border-top: 1px solid #DDD;
 }
 
 h2
@@ -161,13 +164,13 @@ footer
 
 .footnotes ol
 {
-  border-top: 1px solid #EEE;
+  border-top: 1px solid #DDD;
   padding-top: 1em;
 }
 
 .pagination
 {
-  border-top: 1px solid #EEE;
+  border-top: 1px solid #DDD;
   margin-top: 20px;
   padding-top: 20px;
 }
@@ -176,4 +179,10 @@ footer
 .right.floated
 {
   float: right;
+}
+
+
+form.formkit-form
+{
+  margin: 30px auto;
 }

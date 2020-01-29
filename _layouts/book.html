@@ -9,8 +9,10 @@
 
     <link rel="stylesheet" href="/assets/css/bebasneue/bebasneue.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
 
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script type="text/javascript" src="/assets/js/social-share-kit.min.js"></script>
   </head>
   <body>
     <header>
@@ -29,6 +31,13 @@
         <article>
           {{ content }}
         </article>
+
+        <nav class="pagination" style="text-align: center">
+          <a class="ssk ssk-twitter" href="#"><i class="ui icon twitter"></i></a>
+          <a class="ssk ssk-facebook" href="#"><i class="ui icon facebook"></i></a>
+          <a class="ssk ssk-linkedin" href="#"><i class="ui icon linkedin"></i></a>
+          <a href="mailto:?subject=Excerpt%20from%20%22Just%20Stop%22&body={{ site.url }}{{ page.url }}"><i class="ui icon mail"></i></a>
+        </nav>
 
         <nav class="pagination">
 
@@ -59,13 +68,21 @@
 
       <aside class="four wide column">
         <p><a href="/"><img src="/assets/img/cover.png"/></a></p>
-        <button class="ui button green">Buy The eBook</button>
+
+        <div class="ui vertical text menu">
+          <div class="item">
+            <a class="title" href="/">HOME</a>
+            <hr/>
+          </div>
+        </div>
+
+
         {% assign chapters =  site.chapters | sort: "order" | group_by:"chapter" %}
         {% for chapter in chapters %}
 
             <div class="ui vertical text menu">
               <div class="item">
-                <a class="title" href="#">
+                <a class="title" href="{{ chapter.items | map: 'url' | first }}">
                   {{ chapter.name | replace: '-', ' ' | upcase}}
                 </a>
 
@@ -83,11 +100,12 @@
                 </div>
 
 
-
               </div>
             </div>
 
         {% endfor %}
+
+        <button class="ui button mini basic primary">Buy The eBook</button>
 
       </aside>
 
@@ -99,5 +117,9 @@
   <footer>
   </footer>
 
+
+  <script type="text/javascript">
+    SocialShareKit.init();
+  </script>
   </body>
 </html>

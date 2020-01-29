@@ -31,6 +31,9 @@ collections:
     output: true
     permalink: /:path
 
+sass:
+  style: compressed
+
 # Build settings
 markdown: kramdown
 theme: minima
