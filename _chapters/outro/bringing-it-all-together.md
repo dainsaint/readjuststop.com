@@ -30,7 +30,7 @@ With practice, you'll be able to blend all five activities. The cycle of being, 
 
 ### Flowing
 
-Flowing is the state of being fully engaging with your current activity with total focus and enjoyment. It's a mental state coveted by athletes and gamers alike, and as a result we frequently associate it with a high level of arousal.
+Flow is the state of being fully engaged with your current activity with total focus and enjoyment. It's a mental state coveted by athletes and gamers alike, and as a result we frequently associate it with a high level of arousal.
 
 But you don't need to be scaling a sheer cliff face to experience flow. As you bring these exercises into your life, you'll start noticing that things just happen when they need to. You'll notice when you should use all your energy and push, and when you should take a moment and breathe. You might even notice yourself accomplishing more with a fraction of the effort you use to use.
 
