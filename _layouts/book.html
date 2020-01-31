@@ -14,41 +14,39 @@
   	<meta name="twitter:image" content="https://readjuststop.com/assets/img/social.jpg">
 
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/windsor/windsor.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:200,300,400,700,900|Playfair+Display:400,400i,700,700i&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:200,300,400,700,900|Playfair+Display:400,400i,700,700i&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/assets/css/bebasneue/bebasneue.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/colors.css">
+    <!-- <link rel="stylesheet" href="/assets/css/style.css"> -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <!-- <link rel="stylesheet" href="/assets/css/colors.css"> -->
 
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
     <script type="text/javascript" src="/assets/js/social-share-kit.min.js"></script>
   </head>
-  <body>
-    <header>
-    <nav>
+  <body class="book">
+    <header class="woods">
+    </header>
 
-    </nav>
-  </header>
+    <main>
 
-
-
-    <main class="ui container stackable grid">
-
-
-      <section class="twelve wide column">
+      <section id="content" class="page">
         <h1>{{ page.title }}</h1>
         <article>
           {{ content }}
         </article>
 
-        <nav class="pagination" style="text-align: center">
-          <a class="ssk ssk-twitter" href="#"><i class="ui icon twitter"></i></a>
-          <a class="ssk ssk-facebook" href="#"><i class="ui icon facebook"></i></a>
-          <a class="ssk ssk-linkedin" href="#"><i class="ui icon linkedin"></i></a>
-          <a href="mailto:?subject=Excerpt%20from%20%22Just%20Stop%22&body={{ site.url }}{{ page.url }}"><i class="ui icon mail"></i></a>
+        <nav class="social" style="text-align: center">
+          <a class="ssk ssk-twitter" href="#"><i class="fa fa-twitter-square"></i></a>
+          <a class="ssk ssk-facebook" href="#"><i class="fa fa-facebook-square"></i></a>
+          <a class="ssk ssk-linkedin" href="#"><i class="fa fa-linkedin-square"></i></a>
+          <a href="mailto:?subject=Excerpt%20from%20%22Just%20Stop%22&body={{ site.url }}{{ page.url }}"><i class="fa fa-envelope-square"></i></a>
         </nav>
 
         <nav class="pagination">
@@ -60,15 +58,15 @@
           {% assign next = i | plus: 1 %}
 
           {% if pages[i].title == page.title and prev >= 0 %}
-          <a class="ui left floated " href="{{ pages[prev].url}}"> &#8592; {{ pages[prev].title }}</a>
+          <a class="prev" href="{{ pages[prev].url}}"> &#8592; {{ pages[prev].title }}</a>
           {% endif %}
 
           {% if pages[i].title == page.title and prev < 0 %}
-          <a class="ui left floated " href="/"> &#8592; Home</a>
+          <a class="prev" href="/"> &#8592; Home</a>
           {% endif %}
 
           {% if pages[i].title == page.title and next < count %}
-          <a class="ui right floated" href="{{ pages[next].url}}">{{ pages[next].title }} &#8594;</a>
+          <a class="next" href="{{ pages[next].url}}">{{ pages[next].title }} &#8594;</a>
           {% endif %}
           {% endfor %}
 
@@ -78,46 +76,61 @@
 
 
 
-      <aside class="four wide column">
-        <p><a href="/"><img src="/assets/img/cover.png"/></a></p>
+      <aside>
 
-        <div class="ui vertical text menu">
-          <div class="item">
+
+        <nav>
+          <header>
+            <h4>Just Stop</h4>
+            <p>A book to help change your relationship with time.</p>
+          </header>
+
+          <section>
             <a class="title" href="/">HOME</a>
+
             <hr/>
-          </div>
-        </div>
+          </section>
 
 
         {% assign chapters =  site.chapters | sort: "order" | group_by:"chapter" %}
         {% for chapter in chapters %}
 
-            <div class="ui vertical text menu">
-              <div class="item">
+            <section>
+
                 <a class="title" href="{{ chapter.items | map: 'url' | first }}">
                   {{ chapter.name | replace: '-', ' ' | upcase}}
                 </a>
 
-                <div class="active content menu">
+                <ul>
 
 
-                {% for p in chapter.items %}
-                {% if p.url == page.url %}
-                <a class="active item" href="{{ p.url }}">{{ p.title }}</a>
-                {% else %}
-                <a class="item" href="{{ p.url }}">{{ p.title }}</a>
-                {% endif %}
-                {% endfor %}
+                  {% for p in chapter.items %}
+                  {% if p.url == page.url %}
+                  <li><a class="active item" href="{{ p.url }}">{{ p.title }}</a></li>
+                  {% else %}
+                  <li><a class="item" href="{{ p.url }}">{{ p.title }}</a></li>
+                  {% endif %}
+                  {% endfor %}
 
-                </div>
+                </ul>
 
-
-              </div>
-            </div>
+            </section>
 
         {% endfor %}
 
-        <button class="ui button mini basic primary">Buy The eBook</button>
+        <section>
+          <hr/>
+          <a href="/" style="display: block">
+            <img src="/assets/img/cover.png"/>
+          </a>
+
+          <p>
+            <a class="button mini dark" href="https://gum.co/QpepE?wanted=true" data-gumroad-single-product="true">Buy The eBook</a>
+          </p>
+          <script src="https://gumroad.com/js/gumroad.js"></script>
+        </section>
+
+      </nav>
 
       </aside>
 

@@ -6,6 +6,7 @@ layout: book
 ---
 ### Let's Play!
 
+{:.drop-cap}
 Now that we've gotten used to noticing our thoughts, energy, and feelings, let's put it to use. Notice the next time you say "I don't have time" to do something. When you notice that, think about why it is you don't have time. Think about the decisions you made, without judgment or blame.
 
 Let's say you don't have enough time because a coworker dumped extra work on your desk. *Own your decision* to do that work rather than pass the buck.

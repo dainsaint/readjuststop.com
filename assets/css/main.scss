@@ -1,0 +1,528 @@
+---
+---
+
+$black: hsl(0,0,10%);
+$dark: hsl(0,0,30%);
+$mid: hsl(0,0,50%);
+$light: hsl(0,0,70%);
+$pale: hsl(201, 24%, 96%);
+$white: hsl(0,0,100%);
+
+$teal: hsl(201, 69%, 28%);
+$darkteal: #354148;
+$lightteal: hsl(201, 75%, 34%);
+$brightteal: hsl(201, 50%, 70%);
+
+$lightred: #E4776C;
+$red: #C65F5D;
+
+body
+{
+  font-family: 'Lato';
+  background: $pale;
+  &.book
+  {
+    padding: 24px;
+  }
+}
+
+
+.book
+{
+  header.woods{
+    background: url( '../img/background.jpg' ) #354148 center center;
+    height: 100px;
+    margin: -24px;
+  }
+}
+
+h1
+{
+  font-family: 'BebasNeue';
+  font-weight: normal;
+  color: $red;
+}
+
+a
+{
+  text-decoration: none;
+  color: $teal;
+}
+
+main
+{
+  margin: 0px auto;
+  max-width: 970px;
+  display: grid;
+  grid-template-columns: auto 200px;
+  @media(max-width: 720px)
+  {
+    grid-template-columns: auto;
+  }
+
+
+
+  section.page
+  {
+    background: $white;
+  }
+
+  section#content
+  {
+
+    padding: 24px;
+
+    blockquote
+    {
+        border-left: 2px solid $red;
+        margin-left: 0px;
+        padding-left: 32px;
+        p
+        {
+          color: $mid;
+        }
+    }
+
+    p, ol li, ul li
+    {
+      font-size: 20px;
+      line-height: 32px;
+      font-weight: 100;
+      color: $dark;
+
+    }
+
+    h1
+    {
+      border-bottom: 1px solid $light;
+    }
+
+    h2
+    {
+      font-style: italic;
+      font-weight: 100;
+    }
+
+    .spell
+    {
+      text-align: center;
+      font-size: 48px;
+      font-weight: 100;
+    }
+
+    .footnotes::before
+    {
+      content: "References:";
+      color: $light;
+    }
+
+    .footnotes
+    {
+      margin-top: 48px;
+
+      ol
+      {
+        margin-left: 16px;
+        padding: 0px;
+      }
+
+      li, p
+      {
+        font-size: 14px;
+        padding: 0px;
+        color: $light;
+      }
+
+    }
+  }
+}
+
+
+
+
+aside
+{
+
+  padding: 24px;
+  padding-top: 0px;
+
+  img
+  {
+    max-width: 80%;
+  }
+
+  nav
+  {
+
+
+    font-size: 14px;
+
+    header
+    {
+      margin-top:48px;
+      h4
+      {
+        font-family: "BebasNeue";
+        font-size: 32px;
+        margin: 0px;
+        color: $teal;
+      }
+
+      p
+      {
+        margin: 0px;
+        font-size: 16px;
+        line-height: 20px;
+        color: $mid;
+      }
+
+      margin-bottom: 30px;
+    }
+
+    section
+    {
+      margin-bottom: 30px;
+        a.title
+        {
+            color: $teal;
+
+            &:hover
+            {
+              text-decoration: underline;
+            }
+        }
+
+        ul
+        {
+          margin: 0px;
+          padding: 0px;
+
+          li
+          {
+            margin: 8px 0px;
+            padding: 0px;
+            list-style: none;
+
+            a
+            {
+              font-weight: 100;
+              color: $dark;
+
+              &.active
+              {
+                font-weight: 500;
+                color: $dark;
+              }
+
+              &:hover
+              {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+    }
+
+  }
+}
+
+
+h1
+{
+  font-size: 64px;
+  margin: 0px;
+
+}
+
+hr
+{
+  border: none;
+  border-top: 1px solid $light;
+  margin: 12px 0px;
+}
+
+h2
+{
+  font-size: 24px;
+  color: $mid;
+}
+
+h3
+{
+  font-size: 20px;
+  color: $darkteal;
+}
+
+
+
+button, a.button
+{
+  font-size: 16px;
+  padding: 12px 24px;
+  background: $red;
+  color: $white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+
+  &:hover
+  {
+    text-decoration: none !important;
+    background: $lightred;
+  }
+}
+
+button.dark, a.button.dark
+{
+  background: $darkteal;
+
+  &:hover
+  {
+    background: lighten($darkteal, 5);
+  }
+}
+
+button.basic, a.button.basic
+{
+  background: none;
+  border: 1px solid $teal;
+  color: $teal;
+
+  &:hover
+  {
+    background: none;
+    color: $lightteal;
+    border-color: $lightteal;
+  }
+}
+
+button.mini, a.button.mini
+{
+  font-size: 12px;
+}
+
+
+
+
+
+.social
+{
+
+  padding: 24px 0px;
+  font-size: 24px;
+  a
+  {
+    color: $light;
+    &:hover
+    {
+      color: $teal;
+    }
+  }
+}
+
+.pagination
+{
+  border-top: 1px solid $light;
+  padding-top: 24px;
+  a
+  {
+    color: $teal;
+    &:hover
+    {
+      text-decoration: underline;
+    }
+  }
+  .next
+  {
+    float: right;
+  }
+}
+
+
+
+.lead
+{
+  font-weight: 100;
+  font-size: 24px;
+  color: $light;
+}
+
+#frontpage
+{
+  header
+  {
+
+    background: url( '../img/background.jpg' ) #354148 top center;
+    background-size: cover;
+    padding: 100px 24px;
+    position: relative;
+
+
+    .content
+    {
+
+      max-width: 970px;
+      margin: 0px auto;
+
+      .tag
+      {
+        font-size: 36px;
+        margin: 0px;
+        color: $white;
+
+      }
+
+      h1
+      {
+        border: none;
+        margin: 0px;
+        margin-top: 64px;
+        font-size: 96px;
+        color: $white;
+        padding: 0px;
+        line-height: 64px;
+        font-weight: normal;
+      }
+
+      .lead
+      {
+        color: $pale;
+        margin: 16px 0px 0px 0px;
+      }
+
+      .cta
+      {
+        margin-top:48px;
+      }
+
+      .byline
+      {
+
+        margin: 0px;
+        margin-top:12px;
+        font-size: 16px;
+        font-weight: 100;
+        color: $white;
+        a
+        {
+          font-weight: 500;
+          color: $white;
+
+          &:hover
+          {
+            text-decoration: underline;
+          }
+        }
+        padding: 0px;
+      }
+
+      display: grid;
+      grid-template-columns: 50% 50%;
+
+
+      @media(max-width: 720px)
+      {
+        grid-template-columns: auto;
+      }
+
+
+      .text
+      {
+        text-align: right;
+
+        @media(max-width: 720px)
+        {
+          text-align: left;
+        }
+      }
+
+      .cover
+      {
+        text-align: center;
+        @media(max-width: 720px)
+        {
+          text-align: left;
+        }
+
+
+
+        img
+        {
+          max-height: 100%;
+          box-shadow: 0 5px 15px rgba(0,0,0,.2);
+
+          @media(max-width: 720px)
+          {
+            margin-top: 24px;
+            max-height: none;
+            max-width: 400px;
+          }
+        }
+      }
+
+
+    }
+  }
+  main
+  {
+    max-width: 100%;
+    background: $white;
+    #content
+    {
+      max-width: 970px;
+      margin: 0px auto;
+    }
+  }
+}
+
+
+main section#content .formkit-guarantee p
+{
+  font-size:12px;
+}
+
+form
+{
+  h1
+  {
+    font-size: 36px;
+  }
+  input
+  {
+    border: 1px solid $light;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-weight: 100;
+    width: 300px;
+    outline: none;
+
+    @media(max-width: 720px)
+    {
+      width: 100%;
+    }
+  }
+
+  .formkit-field
+  {
+    margin-right: 12px;
+    margin-bottom: 12px;
+    display: inline-block;
+
+    @media(max-width: 720px)
+    {
+      width: 100%;
+    }
+  }
+
+  margin-top: 48px;
+  padding-bottom: 120px;
+
+}
+
+
+a.footnote
+{
+  color: $lightteal;
+  font-weight: 500;
+}
