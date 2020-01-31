@@ -23,6 +23,11 @@ body
   &.book
   {
     padding: 24px;
+
+    @media(max-width: 500px)
+    {
+      padding: 12px;
+    }
   }
 }
 
@@ -33,6 +38,11 @@ body
     background: url( '../img/background.jpg' ) #354148 center center;
     height: 100px;
     margin: -24px;
+
+    @media(max-width: 500px)
+    {
+      margin: -12px;
+    }
   }
 }
 
@@ -72,6 +82,11 @@ main
 
     padding: 24px;
 
+    @media(max-width: 500px)
+    {
+      padding: 12px;
+    }
+
     blockquote
     {
         border-left: 2px solid $red;
@@ -90,11 +105,22 @@ main
       font-weight: 100;
       color: $dark;
 
+      @media(max-width: 500px)
+      {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
     }
 
     h1
     {
       border-bottom: 1px solid $light;
+
+      @media(max-width: 500px)
+      {
+        font-size: 48px;
+      }
     }
 
     h2
@@ -103,10 +129,13 @@ main
       font-weight: 100;
     }
 
+
+
     .spell
     {
-      text-align: center;
+      text-align: left;
       font-size: 48px;
+      line-height: 64px;
       font-weight: 100;
     }
 
@@ -264,6 +293,8 @@ button, a.button
   border: none;
   border-radius: 12px;
   cursor: pointer;
+  display: inline-block;
+  margin: 4px 0px;
 
   &:hover
   {
@@ -324,18 +355,22 @@ button.mini, a.button.mini
 {
   border-top: 1px solid $light;
   padding-top: 24px;
+  display: grid;
+  grid-template-columns: 50% 50%;
   a
   {
+    display: block;
     color: $teal;
     &:hover
     {
       text-decoration: underline;
     }
   }
-  .next
-  {
-    float: right;
+
+  .next{
+    text-align: right;
   }
+
 }
 
 
@@ -370,6 +405,12 @@ button.mini, a.button.mini
         margin: 0px;
         color: $white;
 
+        @media(max-width: 500px)
+        {
+          font-size: 24px;
+        }
+
+
       }
 
       h1
@@ -382,12 +423,23 @@ button.mini, a.button.mini
         padding: 0px;
         line-height: 64px;
         font-weight: normal;
+
+        @media(max-width: 500px)
+        {
+          font-size: 72px;
+          line-height: 48px;
+        }
       }
 
       .lead
       {
         color: $pale;
         margin: 16px 0px 0px 0px;
+
+        @media(max-width: 500px)
+        {
+          font-size: 16px;
+        }
       }
 
       .cta
@@ -459,6 +511,11 @@ button.mini, a.button.mini
             max-height: none;
             max-width: 400px;
           }
+
+          @media(max-width: 500px)
+          {
+            max-width: 275px;
+          }
         }
       }
 
@@ -490,6 +547,12 @@ form
   h1
   {
     font-size: 36px;
+
+    @media(max-width: 500px)
+    {
+      font-size: 24px;
+    }
+
   }
   input
   {

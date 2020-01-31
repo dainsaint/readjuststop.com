@@ -4,4 +4,5 @@ chapter: chapter-four
 order: 20
 layout: book
 ---
-`What would feel good right now?`
+{:.spell}
+What would feel good right now?
