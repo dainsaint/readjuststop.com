@@ -61,6 +61,7 @@ a
 
 main
 {
+
   margin: 0px auto;
   max-width: 970px;
   display: grid;
@@ -615,4 +616,34 @@ a.footnote
 {
   color: $lightteal;
   font-weight: 500;
+}
+
+footer
+{
+
+  color: $mid;
+  font-weight: 100;
+
+  ;
+
+  div
+  {
+
+    margin: 0px auto;
+    margin-bottom: 86px;
+    max-width: 970px;
+
+    padding: 24px;
+
+    @media(max-width: 500px)
+    {
+      padding: 12px;
+    }
+
+    p
+    {
+      border-top: 1px solid $light;
+      padding-top: 48px;
+    }
+  }
 }
