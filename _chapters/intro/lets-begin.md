@@ -4,6 +4,10 @@ chapter: intro
 order: 2
 layout: book
 ---
+> *We spend years saying “time is money”*  
+> *Then spend years being told we don't have enough money*  
+> *No wonder we feel we don't have enough time*  
+> *No wonder we spend years*  
 
 This is a collection of musings, practices, and mental models about time.
 
