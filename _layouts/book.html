@@ -35,7 +35,7 @@
     </header>
 
     <main>
-
+<div>
       <section id="content" class="page">
         <h1>{{ page.title }}</h1>
         <article>
@@ -72,16 +72,21 @@
 
         </nav>
 
+
+
       </section>
 
-
+      <section id="content">
+        {% include form.html %}
+      </section>
+</div>
 
       <aside>
 
 
         <nav>
           <header>
-            <h4>Just Stop</h4>
+            <h4><a href="/">Just Stop</a></h4>
             <p>A book to help change your relationship with time.</p>
           </header>
 
@@ -127,7 +132,7 @@
           <p>
             <a class="button mini dark" href="https://gum.co/QpepE?wanted=true" data-gumroad-single-product="true">Buy The eBook</a>
           </p>
-          <script src="https://gumroad.com/js/gumroad.js"></script>
+
         </section>
 
       </nav>
