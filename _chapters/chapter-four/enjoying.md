@@ -24,7 +24,7 @@ What we *will* disagree with is the idea that those things *have* to feel bad.
 
 ### The only difference between work and play is whether or not you *have* to do it.
 
-You may love dancing, but if you had do it four nights a week for a paycheck it might start to feel like work super quick.
+You may love dancing, but if you had to do it four nights a week for a paycheck it might start to feel like work super quick.
 
 Conversely, you may hate dealing with spreadsheets, but if you're using it to plan a wedding, it may suddenly become a joyful activity.
 
