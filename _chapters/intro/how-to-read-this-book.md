@@ -29,4 +29,4 @@ The chapters themselves aren't linear, so feel free to jump around and read what
 
 All we can do is offer you the concepts, ideas, and thoughts we've found to be helpful for ourselves and the people we've had the privilege of coaching along their journeys, and hope that the experience reading this anthology and sitting with its ideas resonates with you.
 
-So, are ready to shift the way you think about time?
+So, are you ready to shift the way you think about time?
